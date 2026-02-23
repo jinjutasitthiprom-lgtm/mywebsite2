@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            text-align: center;
+
+           
+
+        }
+
+        /* ภาพหัวเว็บ */
+        .header-img {
+            width: 100%;
+            height: 150px; /* ปรับสูงได้ */
+            object-fit: cover;
+            display: block;
+        }  
+         body {
+        font-family: "Prompt", sans-serif;
+        margin: 0;
+        background: #b8c4db;
+
+        }
+
+        .store-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .store-box {
+            width: 200px;
+            background: #5e57a0;
+            border-radius: 12px;
+            padding: 10px;
+            text-decoration: none;
+            color: rgb(250, 255, 255);
+            transition: 0.2s;
+
+          
+
+        }
+
+        .store-box:hover {
+            background: #979595;
+            
+        }
+
+        .store-img {
+            width: 100%;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .store-name {
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ภาพหัวเว็บ -->
+    <img src="D:\image\ร้าน6.jpg" alt="Header" class="header-img">
+
+    <h1>Home Page</h1>
+    <h3>เลือกร้านอาหารที่ต้องการรีวิว</h3>
+
+
+
+    <div class="store-list">
+        <a class="store-box" href="ให้คะแนน1.html">
+            <img src="D:\image\ป้าแดง.jpg" class="store-img" alt="ร้านที่ 1">
+            <div class="store-name"> ร้านข้าวน้าแดง </div>
+        </a>
+
+        <a class="store-box" href="ให้คะแนน2.html">
+            <img src="D:\image\ป้าเจ๋.jpg" class="store-img" alt="ร้านที่ 2">
+            <div class="store-name">ร้านขนมน้าเจ๋ </div>
+        </a>
+
+        <a class="store-box" href="ให้คะแนน3.html">
+            <img src="D:\image\121.jpg" class="store-img" alt="ร้านที่ 3">
+            <div class="store-name">ครัวคุณครูข้าวราดแกง</div>
+        </a>
+
+        <a class="store-box" href="ให้คะแนน4.html">
+            <img src="D:\image\คุณปุ๊ก.jpg" class="store-img" alt="ร้านที่ 4">
+            <div class="store-name">คุณปุ๊กก๋วยเตี๋ยว-หมูน้ำตก</div>
+        </a>
+
+        <a class="store-box" href="ให้คะแนน5.html">
+            <img src="D:\image\พี่สุขนม.jpg" class="store-img" alt="ร้านที่ 5">
+            <div class="store-name">ร้านสุขนมเครื่องดื่ม</div>
+        </a>
+    </div>
+
+</body>
+</html>

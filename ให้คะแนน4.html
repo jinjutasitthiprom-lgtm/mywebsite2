@@ -1,0 +1,338 @@
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+
+<style>
+    body {
+        font-family: "Prompt", sans-serif;
+        margin: 0;
+        background: #97a3d8;
+        padding-bottom: 50px;
+    }
+
+    /* ภาพหัวเว็บ */
+        .header-img {
+            width: 100%;
+            height: 150px; /* ปรับสูงได้ */
+            object-fit: cover;
+            display: block;
+            
+    }
+
+    .container {
+        width: 90%;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    h2 {
+        margin-top: 40px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+        background: rgb(217, 224, 255);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    th, td {
+        border: 1px solid #2f3985;
+        padding: 12px;
+        text-align: center;
+    }
+
+    th {
+        background: #32296c;
+        color: white;
+    }
+
+    .stars {
+        font-size: 40px;
+        cursor: pointer;
+        color: #c2c2c2;
+    }
+
+    .comment-box {
+        width: 100%;
+        height: 150px;
+        margin-top: 15px;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid #000000;
+        font-size: 16px;
+        resize: vertical;
+    }
+
+    .submit-btn {
+        margin-top: 20px;
+        padding: 14px 30px;
+        font-size: 20px;
+        background: #28a745;
+        color: rgb(255, 255, 255);
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .submit-btn:hover {
+        background: #1f8a39;
+    }
+    .finish-btn {
+    margin-top: 20px;
+    padding: 14px 30px;
+    font-size: 20px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: none; /* ซ่อนไว้ก่อน */
+}
+
+.finish-btn:hover {
+    background: #1f8a39;
+}
+</style>
+</head>
+
+<body>
+
+
+    <img src="D:\image\ร้าน6.jpg" alt="Header" class="header-img">
+
+<div class="container">
+
+    <h2>อ่านและให้คะแนนในแต่ละหัวข้อ</h2>
+
+    <table>
+    <tr>
+        <th>หัวข้อ</th>
+        <th>1 คะแนน</th>
+        <th>2 คะแนน</th>
+        <th>3 คะแนน</th>
+        <th>4 คะแนน</th>
+        <th>5 คะแนน</th>
+    </tr>
+
+    <tr>
+        <td>1. รสชาติอาหาร</td>
+        <td><input type="radio" name="score1" value="1"></td>
+        <td><input type="radio" name="score1" value="2"></td>
+        <td><input type="radio" name="score1" value="3"></td>
+        <td><input type="radio" name="score1" value="4"></td>
+        <td><input type="radio" name="score1" value="5"></td>
+    </tr>
+
+    <tr>
+        <td>2. ความสดใหม่ของวัตถุดิบ</td>
+        <td><input type="radio" name="score2" value="1"></td>
+        <td><input type="radio" name="score2" value="2"></td>
+        <td><input type="radio" name="score2" value="3"></td>
+        <td><input type="radio" name="score2" value="4"></td>
+        <td><input type="radio" name="score2" value="5"></td>
+    </tr>
+
+    <tr>
+        <td>3. ความสะอาดของอาหาร</td>
+        <td><input type="radio" name="score3" value="1"></td>
+        <td><input type="radio" name="score3" value="2"></td>
+        <td><input type="radio" name="score3" value="3"></td>
+        <td><input type="radio" name="score3" value="4"></td>
+        <td><input type="radio" name="score3" value="5"></td>
+    </tr>
+
+    <tr>
+        <td>4. ความสะอาดของร้านโดยรวม</td>
+        <td><input type="radio" name="score4" value="1"></td>
+        <td><input type="radio" name="score4" value="2"></td>
+        <td><input type="radio" name="score4" value="3"></td>
+        <td><input type="radio" name="score4" value="4"></td>
+        <td><input type="radio" name="score4" value="5"></td>
+    </tr>
+
+    <tr>
+        <td>5. ความรวดเร็วในการบริการ</td>
+        <td><input type="radio" name="score5" value="1"></td>
+        <td><input type="radio" name="score5" value="2"></td>
+        <td><input type="radio" name="score5" value="3"></td>
+        <td><input type="radio" name="score5" value="4"></td>
+        <td><input type="radio" name="score5" value="5"></td>
+    </tr>
+
+    <tr>
+        <td>6. การต้อนรับของพนักงาน</td>
+        <td><input type="radio" name="score6" value="1"></td>
+        <td><input type="radio" name="score6" value="2"></td>
+        <td><input type="radio" name="score6" value="3"></td>
+        <td><input type="radio" name="score6" value="4"></td>
+        <td><input type="radio" name="score6" value="5"></td>
+    </tr>
+
+    <tr>
+        <td>7. ความสุภาพของพนักงาน</td>
+        <td><input type="radio" name="score7" value="1"></td>
+        <td><input type="radio" name="score7" value="2"></td>
+        <td><input type="radio" name="score7" value="3"></td>
+        <td><input type="radio" name="score7" value="4"></td>
+        <td><input type="radio" name="score7" value="5"></td>
+    </tr>
+
+    <tr>
+        <td>8. ปริมาณอาหารคุ้มค่ากับราคา</td>
+        <td><input type="radio" name="score8" value="1"></td>
+        <td><input type="radio" name="score8" value="2"></td>
+        <td><input type="radio" name="score8" value="3"></td>
+        <td><input type="radio" name="score8" value="4"></td>
+        <td><input type="radio" name="score8" value="5"></td>
+    </tr>
+
+    <tr>
+        <td>9. ราคาสมเหตุสมผล</td>
+        <td><input type="radio" name="score9" value="1"></td>
+        <td><input type="radio" name="score9" value="2"></td>
+        <td><input type="radio" name="score9" value="3"></td>
+        <td><input type="radio" name="score9" value="4"></td>
+        <td><input type="radio" name="score9" value="5"></td>
+    </tr>
+
+    <tr>
+        <td>10. ความประทับใจโดยรวม</td>
+        <td><input type="radio" name="score10" value="1"></td>
+        <td><input type="radio" name="score10" value="2"></td>
+        <td><input type="radio" name="score10" value="3"></td>
+        <td><input type="radio" name="score10" value="4"></td>
+        <td><input type="radio" name="score10" value="5"></td>
+    </tr>
+</table>
+
+
+    <h2>ให้คะแนนภาพรวมเป็นดาว (1–5 ดาว)</h2>
+
+    <div id="starRate">
+        <span class="stars" data-star="1">★</span>
+        <span class="stars" data-star="2">★</span>
+        <span class="stars" data-star="3">★</span>
+        <span class="stars" data-star="4">★</span>
+        <span class="stars" data-star="5">★</span>
+    </div>
+
+   <script>
+    const stars = document.querySelectorAll(".stars");
+    let starRating = 0; // ⭐ เก็บคะแนนดาว
+
+    stars.forEach(star => {
+        star.addEventListener("click", function() {
+            starRating = parseInt(this.getAttribute("data-star"));
+
+            stars.forEach(s => {
+                s.style.color =
+                    parseInt(s.getAttribute("data-star")) <= starRating
+                        ? "#ffbb00"
+                        : "#ccc";
+            });
+        });
+    });
+</script>
+
+    <h2>แสดงความคิดเห็นเพิ่มเติม</h2>
+    <textarea class="comment-box" placeholder="พิมพ์ความคิดเห็นของคุณที่นี่..."></textarea>
+
+    <button class="submit-btn">ส่งผลการประเมิน</button>
+    <button onclick="history.back()">ย้อนกลับ</button>
+    
+</div>
+<div id="result" style="margin-top:30px; font-size:18px; font-weight:bold;"></div>
+<div id="improve" style="margin-top:10px; color:red;"></div>
+<script>
+
+document.querySelector(".submit-btn").addEventListener("click", function () {
+
+    let totalScore = 0;
+    let improveList = [];
+
+    const topics = [
+        "รสชาติอาหาร",
+        "ความสดใหม่ของวัตถุดิบ",
+        "ความสะอาดของอาหาร",
+        "ความสะอาดของร้านโดยรวม",
+        "ความรวดเร็วในการบริการ",
+        "การต้อนรับของพนักงาน",
+        "ความสุภาพของพนักงาน",
+        "ปริมาณอาหารคุ้มค่ากับราคา",
+        "ราคาสมเหตุสมผล",
+        "ความประทับใจโดยรวม"
+    ];
+
+    for (let i = 1; i <= 10; i++) {
+        let radios = document.getElementsByName("score" + i);
+        let checked = false;
+
+        for (let r of radios) {
+            if (r.checked) {
+                let score = parseInt(r.value);
+                totalScore += score;
+                checked = true;
+
+                if (score <= 2) {
+                    improveList.push(topics[i - 1]);
+                }
+            }
+        }
+
+        if (!checked) {
+            alert("กรุณาให้คะแนนครบทุกหัวข้อ");
+            return;
+        }
+    }
+
+    if (starRating === 0) {
+        alert("กรุณาให้คะแนนดาวภาพรวม");
+        return;
+    }
+
+    let comment = document.querySelector(".comment-box").value;
+
+    fetch("https://script.google.com/macros/s/AKfycbwlzscsmC9At5NXAdb33fZRMeOqETgprAlfbjROPfmdhjCkv06KQanV2aElkUBpS5CxAw/exec", {
+        method: "POST",
+        body: JSON.stringify({
+            store: "คุณปุ๊กก๋วยเตี๋ยว-หมูน้ำตก",
+            totalScore: totalScore,
+            starRating: starRating,
+            comment: comment,
+            improveList: improveList.join(", ")
+        })
+    })
+    .then(res => res.json())
+    .then(data => {
+
+        // เปลี่ยนหน้าเป็นหน้าข้อความยืนยัน
+        document.body.innerHTML = `
+            <div style="
+                text-align:center;
+                margin-top:150px;
+                font-family:Prompt,sans-serif;
+            ">
+                <h1 style="color:green;">
+                    ✅ ผลประเมินถูกส่งไปยังคุณปุ๊กกวยเตี๋ยว-หมูน้ำตกแล้ว
+                 </h1>
+                <p style="font-size:20px;">
+                    ขอบคุณสำหรับการรีวิว 🙏
+                </p>
+                
+                </button>
+            </div>
+        `;
+    });
+
+});
+
+</script>
+
+
+<button class="finish-btn" id="finishBtn" onclick="goNext()">เสร็จสิ้น</button> 
+
+</body>
+</html>
